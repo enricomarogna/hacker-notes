@@ -52,6 +52,3 @@
 2. **Aprire il file HTML**
     - Naviga nella cartella clonata e apri `index.html` nel tuo browser preferito.
 
----
-
-Creato con ❤️ da momphucker
