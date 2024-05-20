@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Layout</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: "JetBrains Mono", monospace;
+            font-optical-sizing: auto;
+            font-style: normal;
             background-color: #333;
             margin: 0;
             padding: 20px;
         }
+
         a {
             text-decoration: none;
             color: #333;
         }
+
         .stretched-link::after {
             content: "";
             position: absolute;
@@ -25,21 +31,25 @@
             bottom: 0;
             z-index: 1;
         }
+
         h1 {
             color: #fff;
             text-align: center;
             margin: 60px 0;
             font-size: 60px;
         }
+
         h2 {
-            color: #fff;
+            color: #00c000;
             text-align: center;
             margin: 20px 0;
         }
+
         hr {
             border: 1px solid #fff;
             margin: 20px 0;
         }
+
         .container-fluid {
             padding: 0 15px;
             background-color: #565555;
@@ -47,12 +57,14 @@
             border-radius: 10px;
             margin-bottom: 40px;
         }
+
         .row {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
+
         .card {
             background-color: #eaeaea;
             border: none;
@@ -66,9 +78,13 @@
             align-items: center;
             padding: 5px;
         }
+
         .card:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
         }
+
         .img {
             width: 150px;
             height: 150px;
@@ -76,14 +92,21 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+
         .title {
             text-align: center;
             margin-top: 10px;
         }
+
+        .card:hover .title a {
+            color: #00c000;
+            transition: transform 0.2s;
+        }
     </style>
 </head>
+
 <body>
-    <h1>HACKER NOTES</h1>
+    <h1>/HACKER NOTES</h1>
     <h2>Tools</h2>
     <hr>
     <div class="container-fluid">
@@ -114,7 +137,9 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(https://icons.iconarchive.com/icons/hopstarter/halloween-avatar/1024/Skull-icon.png);"></div>
+                <div class="img"
+                    style="background-image: url(https://icons.iconarchive.com/icons/hopstarter/halloween-avatar/1024/Skull-icon.png);">
+                </div>
                 <div class="title">
                     <a href="https://www.revshells.com/" target="_blank" class="stretched-link">
                         <h3>Reverse Shell</h3>
@@ -122,7 +147,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(https://www.exploit-db.com//images/spider-orange.png);"></div>
+                <div class="img" style="background-image: url(https://www.exploit-db.com//images/spider-orange.png);">
+                </div>
                 <div class="title">
                     <a href="https://www.exploit-db.com/" target="_blank" class="stretched-link">
                         <h3>Exploit Database</h3>
@@ -130,7 +156,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://www.explainshell.com/static/img/shell.png');"></div>
+                <div class="img" style="background-image: url('https://www.explainshell.com/static/img/shell.png');">
+                </div>
                 <div class="title">
                     <a href="https://www.explainshell.com/" target="_blank" class="stretched-link">
                         <h3>Explain Shell</h3>
@@ -162,7 +189,9 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://images.credly.com/images/ec81134d-e80b-4eb5-ae07-0eb8e1a60fcd/image.png');"></div>
+                <div class="img"
+                    style="background-image: url('https://images.credly.com/images/ec81134d-e80b-4eb5-ae07-0eb8e1a60fcd/image.png');">
+                </div>
                 <div class="title">
                     <a href="https://github.com/rewardone/OSCPRepo" target="_blank" class="stretched-link">
                         <h3>OSCPRepo</h3>
@@ -186,7 +215,9 @@
         <div class="row">
             <!-- Inserisci qui le card -->
             <div class="card">
-                <div class="img" style="background-image: url(https://icon-library.com/images/password-icon-png/password-icon-png-10.jpg);"></div>
+                <div class="img"
+                    style="background-image: url(https://icon-library.com/images/password-icon-png/password-icon-png-10.jpg);">
+                </div>
                 <div class="title">
                     <a href="https://weakpass.com/" target="_blank" class="stretched-link">
                         <h3>Weekpass</h3>
@@ -218,7 +249,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://crackstation.net/images/crackstation_header.png');"></div>
+                <div class="img"
+                    style="background-image: url('https://crackstation.net/images/crackstation_header.png');"></div>
                 <div class="title">
                     <a href="https://crackstation.net/" target="_blank" class="stretched-link">
                         <h3>Crack Station</h3>
@@ -226,7 +258,9 @@
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://passwordrecovery.io/static/images/password-recovery-logo-300x35.png');"></div>
+                <div class="img"
+                    style="background-image: url('https://passwordrecovery.io/static/images/password-recovery-logo-300x35.png');">
+                </div>
                 <div class="title">
                     <a href="https://passwordrecovery.io/" target="_blank" class="stretched-link">
                         <h3>Password Recovery</h3>
@@ -250,7 +284,8 @@
         <div class="row">
             <!-- Inserisci qui le card -->
             <div class="card">
-                <div class="img" style="background-image: url(https://exploit-notes.hdks.org/img/security-links.png);"></div>
+                <div class="img" style="background-image: url(https://exploit-notes.hdks.org/img/security-links.png);">
+                </div>
                 <div class="title">
                     <a href="https://security-links.hdks.org/" target="_blank" class="stretched-link">
                         <h3>Security Links</h3>
@@ -261,4 +296,5 @@
         </div>
     </div>
 </body>
+
 </html>
