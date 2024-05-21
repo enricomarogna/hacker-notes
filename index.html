@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>/Hacker Notes</title>
     <!-- inserisci favicon -->
-    <link rel="icon" href="https://media.istockphoto.com/vectors/pixel-skull-and-crossbones-icon-vector-illustration-vector-id1040956110?b=1&k=20&m=1040956110&s=170667a&w=0&h=agPgr7lzOupOFt5qGlt_78VZGPihsGo263nCcgiN2bQ="
-        type="image/x-icon">
+    <link rel="icon" href="https://media.istockphoto.com/vectors/pixel-skull-and-crossbones-icon-vector-illustration-vector-id1040956110?b=1&k=20&m=1040956110&s=170667a&w=0&h=agPgr7lzOupOFt5qGlt_78VZGPihsGo263nCcgiN2bQ=" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
@@ -92,27 +91,54 @@
         }
 
         .card {
-            background-color: #eaeaea;
+            width: 200px;
+            height: 300px;
+            background-color: transparent;
             border: none;
             border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.2s;
+            perspective: 1000px;
+        }
+
+        .card-inner {
             position: relative;
-            min-width: 150px;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            border-radius: 10px;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 5px;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            transition: transform 0.2s;
+        .card-front {
+            background-color: #eaeaea;
+        }
+
+        .card-back {
+            background-color: #333;
+            color: #fff;
+            transform: rotateY(180deg);
+            justify-content: center;
+            text-align: center;
         }
 
         .img {
-            width: 150px;
+            width: 100%;
             height: 150px;
             background-size: contain;
             background-repeat: no-repeat;
@@ -126,7 +152,7 @@
 
         .card:hover .title a {
             color: #00c000;
-            transition: transform 0.2s;
+            transition: color 0.2s;
         }
 
         footer {
@@ -147,7 +173,6 @@
         footer p span {
             color: #00c000;
         }
-
     </style>
 </head>
 
@@ -159,55 +184,93 @@
         <div class="row">
             <!-- Inserisci qui le card -->
             <div class="card">
-                <div class="img" style="background-image: url(https://gtfobins.github.io/assets/logo.png);"></div>
-                <div class="title">
-                    <a href="https://gtfobins.github.io/" target="_blank" class="stretched-link">
-                        <h3>GTFOBins</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://gtfobins.github.io/assets/logo.png);"></div>
+                        <div class="title">
+                            <a href="https://gtfobins.github.io/" target="_blank" class="stretched-link">
+                                <h3>GTFOBins</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>GTFOBins è una collezione di eseguibili Unix che possono essere sfruttati per bypassare la sicurezza.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(https://lolbas-project.github.io/assets/logo.png);"></div>
-                <div class="title">
-                    <a href="https://lolbas-project.github.io/" target="_blank" class="stretched-link">
-                        <h3>LOLBas</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://lolbas-project.github.io/assets/logo.png);"></div>
+                        <div class="title">
+                            <a href="https://lolbas-project.github.io/" target="_blank" class="stretched-link">
+                                <h3>LOLBas</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>LOLBas è un progetto che raccoglie i binari di Windows utilizzabili per fini malevoli.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(https://wadcoms.github.io/assets/logo.png);"></div>
-                <div class="title">
-                    <a href="https://wadcoms.github.io/" target="_blank" class="stretched-link">
-                        <h3>WADComs</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://wadcoms.github.io/assets/logo.png);"></div>
+                        <div class="title">
+                            <a href="https://wadcoms.github.io/" target="_blank" class="stretched-link">
+                                <h3>WADComs</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>WADComs è un insieme di comandi per esplorare funzionalità sconosciute di vari software.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img"
-                    style="background-image: url(https://icons.iconarchive.com/icons/hopstarter/halloween-avatar/1024/Skull-icon.png);">
-                </div>
-                <div class="title">
-                    <a href="https://www.revshells.com/" target="_blank" class="stretched-link">
-                        <h3>Reverse Shell</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img" style="background-image: url(https://www.exploit-db.com//images/spider-orange.png);">
-                </div>
-                <div class="title">
-                    <a href="https://www.exploit-db.com/" target="_blank" class="stretched-link">
-                        <h3>Exploit Database</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://icons.iconarchive.com/icons/hopstarter/halloween-avatar/1024/Skull-icon.png);"></div>
+                        <div class="title">
+                            <a href="https://www.revshells.com/" target="_blank" class="stretched-link">
+                                <h3>Reverse Shell</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Reverse Shell fornisce vari comandi per ottenere una shell inversa su una macchina bersaglio.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://webstockreview.net/images/shell-clipart-nautilus-14.png');">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://www.exploit-db.com//images/spider-orange.png);"></div>
+                        <div class="title">
+                            <a href="https://www.exploit-db.com/" target="_blank" class="stretched-link">
+                                <h3>Exploit Database</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Exploit Database è un archivio di exploit pubblici e di vulnerabilità di sicurezza.</p>
+                    </div>
                 </div>
-                <div class="title">
-                    <a href="https://www.explainshell.com/" target="_blank" class="stretched-link">
-                        <h3>Explain Shell</h3>
-                    </a>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://webstockreview.net/images/shell-clipart-nautilus-14.png');"></div>
+                        <div class="title">
+                            <a href="https://www.explainshell.com/" target="_blank" class="stretched-link">
+                                <h3>Explain Shell</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Explain Shell spiega ogni parte di un comando shell per comprendere meglio il suo funzionamento.</p>
+                    </div>
                 </div>
             </div>
             <!-- Fine inserimento card -->
@@ -219,37 +282,63 @@
         <div class="row">
             <!-- Inserisci qui le card -->
             <div class="card">
-                <div class="img" style="background-image: url(https://tinyurl.com/2w234kph);"></div>
-                <div class="title">
-                    <a href="https://book.hacktricks.xyz/" target="_blank" class="stretched-link">
-                        <h3>Hacktricks</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://tinyurl.com/2w234kph);"></div>
+                        <div class="title">
+                            <a href="https://book.hacktricks.xyz/" target="_blank" class="stretched-link">
+                                <h3>HackTricks</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Hack tricks è una wiki con numerosi trucchi e tecniche per il pentesting.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url(https://exploit-notes.hdks.org/img/icon.png);"></div>
-                <div class="title">
-                    <a href="https://exploit-notes.hdks.org/" target="_blank" class="stretched-link">
-                        <h3>Exploit Notes</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://exploit-notes.hdks.org/img/icon.png);"></div>
+                        <div class="title">
+                            <a href="https://exploit-notes.hdks.org/" target="_blank" class="stretched-link">
+                                <h3>Exploit Notes</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Exploit Notes raccoglie appunti e risorse per sfruttare le vulnerabilità.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img"
-                    style="background-image: url('https://images.credly.com/images/ec81134d-e80b-4eb5-ae07-0eb8e1a60fcd/image.png');">
-                </div>
-                <div class="title">
-                    <a href="https://github.com/rewardone/OSCPRepo" target="_blank" class="stretched-link">
-                        <h3>OSCPRepo</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://images.credly.com/images/ec81134d-e80b-4eb5-ae07-0eb8e1a60fcd/image.png');"></div>
+                        <div class="title">
+                            <a href="https://github.com/rewardone/OSCPRepo" target="_blank" class="stretched-link">
+                                <h3>OSCPRepo</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>OSCPRepo è un repository con appunti e risorse per la certificazione OSCP.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://f4.bcbits.com/img/0000837711_10.jpg');"></div>
-                <div class="title">
-                    <a href="https://viperone.gitbook.io/pentest-everything" target="_blank" class="stretched-link">
-                        <h3>Pentest Everything</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://f4.bcbits.com/img/0000837711_10.jpg');"></div>
+                        <div class="title">
+                            <a href="https://viperone.gitbook.io/pentest-everything" target="_blank" class="stretched-link">
+                                <h3>Pentest Everything</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Pentest Everything è una guida completa per il pentesting.</p>
+                    </div>
                 </div>
             </div>
             <!-- Fine inserimento card -->
@@ -261,64 +350,108 @@
         <div class="row">
             <!-- Inserisci qui le card -->
             <div class="card">
-                <div class="img"
-                    style="background-image: url(https://icon-library.com/images/password-icon-png/password-icon-png-10.jpg);">
-                </div>
-                <div class="title">
-                    <a href="https://weakpass.com/" target="_blank" class="stretched-link">
-                        <h3>Weakpass</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img" style="background-image: url('https://cdn2.iconfinder.com/data/icons/100-hand-drawn-comic-cartoon-signs/57/cartoon_comic_hash_hashtag_1-512.png');"></div>
-                <div class="title">
-                    <a href="https://hashkiller.io/listmanager" target="_blank" class="stretched-link">
-                        <h3>HashKiller</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://icon-library.com/images/password-icon-png/password-icon-png-10.jpg);"></div>
+                        <div class="title">
+                            <a href="https://weakpass.com/" target="_blank" class="stretched-link">
+                                <h3>Weakpass</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Weakpass è un sito che fornisce dizionari di password comuni per il cracking.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://www.cmd5.org/images/logo.png');"></div>
-                <div class="title">
-                    <a href="https://www.cmd5.org/" target="_blank" class="stretched-link">
-                        <h3>CMD5</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://cdn2.iconfinder.com/data/icons/100-hand-drawn-comic-cartoon-signs/57/cartoon_comic_hash_hashtag_1-512.png');"></div>
+                        <div class="title">
+                            <a href="https://hashkiller.io/listmanager" target="_blank" class="stretched-link">
+                                <h3>HashKiller</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>HashKiller è un servizio per il cracking di hash tramite dizionari e tabelle rainbow.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://icon-library.com/images/hash-icon/hash-icon-21.jpg');"></div>
-                <div class="title">
-                    <a href="https://www.onlinehashcrack.com/" target="_blank" class="stretched-link">
-                        <h3>Online Hash Crack</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://www.cmd5.org/images/logo.png');"></div>
+                        <div class="title">
+                            <a href="https://www.cmd5.org/" target="_blank" class="stretched-link">
+                                <h3>CMD5</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>CMD5 è un servizio online per il cracking di hash e la decodifica di password.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img"
-                    style="background-image: url('https://crackstation.net/images/crackstation_header.png');"></div>
-                <div class="title">
-                    <a href="https://crackstation.net/" target="_blank" class="stretched-link">
-                        <h3>Crack Station</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://icon-library.com/images/hash-icon/hash-icon-21.jpg');"></div>
+                        <div class="title">
+                            <a href="https://www.onlinehashcrack.com/" target="_blank" class="stretched-link">
+                                <h3>Online Hash Crack</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Online Hash Crack è un servizio di cracking di hash online utilizzando potenti server.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img"
-                    style="background-image: url('https://passwordrecovery.io/static/images/password-recovery-logo-300x35.png');">
-                </div>
-                <div class="title">
-                    <a href="https://passwordrecovery.io/" target="_blank" class="stretched-link">
-                        <h3>Password Recovery</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://crackstation.net/images/crackstation_header.png');"></div>
+                        <div class="title">
+                            <a href="https://crackstation.net/" target="_blank" class="stretched-link">
+                                <h3>Crack Station</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Crack Station è un servizio di cracking di hash gratuito con un database vasto.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
-                <div class="img" style="background-image: url('https://www.shareicon.net/data/512x512/2016/06/15/781471_lock_512x512.png');"></div>
-                <div class="title">
-                    <a href="https://md5decrypt.net/en/" target="_blank" class="stretched-link">
-                        <h3>MD5 Decrypt</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://passwordrecovery.io/static/images/password-recovery-logo-300x35.png');"></div>
+                        <div class="title">
+                            <a href="https://passwordrecovery.io/" target="_blank" class="stretched-link">
+                                <h3>Password Recovery</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Password Recovery offre servizi di recupero password online.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url('https://www.shareicon.net/data/512x512/2016/06/15/781471_lock_512x512.png');"></div>
+                        <div class="title">
+                            <a href="https://md5decrypt.net/en/" target="_blank" class="stretched-link">
+                                <h3>MD5 Decrypt</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>MD5 Decrypt offre servizi di decrittazione di hash MD5 online.</p>
+                    </div>
                 </div>
             </div>
             <!-- Fine inserimento card -->
@@ -330,25 +463,28 @@
         <div class="row">
             <!-- Inserisci qui le card -->
             <div class="card">
-                <div class="img" style="background-image: url(https://exploit-notes.hdks.org/img/security-links.png);">
-                </div>
-                <div class="title">
-                    <a href="https://security-links.hdks.org/" target="_blank" class="stretched-link">
-                        <h3>Security Links</h3>
-                    </a>
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="img" style="background-image: url(https://exploit-notes.hdks.org/img/security-links.png);"></div>
+                        <div class="title">
+                            <a href="https://security-links.hdks.org/" target="_blank" class="stretched-link">
+                                <h3>Security Links</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Security Links è una raccolta di collegamenti utili per la sicurezza informatica.</p>
+                    </div>
                 </div>
             </div>
             <!-- Fine inserimento card -->
         </div>
     </div>
-
     <footer>
         <p>
             Made with <span><i class="fa-solid fa-heart"></i></span> by momphucker - <a href="https://github.com/enricomarogna/hacker-notes" target="_blank"><i class="fa-brands fa-github"></i></a>
         </p>
     </footer>
-
 </body>
-
 
 </html>
