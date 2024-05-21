@@ -42,6 +42,24 @@
             font-size: 60px;
         }
 
+        h1 span {
+            color: #00c000;
+            /* effetto blinking */
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {
+            0% {
+            opacity: 0;
+            }
+            50% {
+            opacity: .5;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
+
         h2 {
             color: #00c000;
             text-align: center;
@@ -109,7 +127,7 @@
 </head>
 
 <body>
-    <h1>/HACKER NOTES</h1>
+    <h1>/HACKER NOTES<span>_</span></h1>
     <h2>Tools</h2>
     <hr>
     <div class="container-fluid">
