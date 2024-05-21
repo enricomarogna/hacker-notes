@@ -1,6 +1,6 @@
 # Hacker Notes
 
-![Hacker Notes](https://media.istockphoto.com/vectors/pixel-skull-and-crossbones-icon-vector-illustration-vector-id1040956110?b=1&k=20&m=1040956110&s=170667a&w=0&h=agPgr7lzOupOFt5qGlt_78VZGPihsGo263nCcgiN2bQ=)
+![Hacker Notes](./assets/img/hacker-notes-icon.webp)
 
 [enricomarogna.github.io/hacker-notes](https://enricomarogna.github.io/hacker-notes/)
 
