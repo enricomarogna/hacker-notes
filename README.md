@@ -6,7 +6,7 @@
 
 ## Descrizione
 
-**Hacker Notes** è un repository che contiene una singola pagina HTML progettata per essere un punto di riferimento rapido e utile per vari strumenti e risorse legate alla sicurezza informatica e hacking. La pagina offre collegamenti a strumenti essenziali, wiki di hacking e cracker di password online.
+**Hacker Notes** è un repository progettato per essere un punto di riferimento rapido e utile per vari strumenti e risorse legate alla sicurezza informatica e hacking. La pagina offre collegamenti a strumenti essenziali, wiki di hacking e cracker di password online.
 
 ## Funzionalità
 
