@@ -107,6 +107,7 @@ Vue.component('misc-section', {
             miscs: [
                 { image: './assets/img/exploit-notes-hdks.webp', title: 'Security Links', link: 'https://security-links.hdks.org/', description: 'Security Links è una raccolta di collegamenti utili per la sicurezza informatica.' },
                 { image: './assets/img/open-security-training.webp', title: 'Open Security Training', link: 'https://opensecuritytraining.info/', description: 'Open Security Training è un sito che offre corsi di sicurezza informatica gratuiti e open source.' },
+                { image: './assets/img/offsec.webp', title: 'Offsec', link: 'https://portal.offsec.com/', description: 'OffSec (Offensive Security) è una risorsa di riferimento per la formazione e la certificazione in sicurezza informatica.' },
                 // aggiungi altri misc qui...
             ]
         };
