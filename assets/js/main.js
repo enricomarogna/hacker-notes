@@ -1,7 +1,7 @@
 Vue.component('tools-section', {
     template: `
-    <div class="container-fluid">
-        <div class="row">
+    <div class="hn-container-fluid">
+        <div class="hn-row">
             <card 
                 v-for="tool in tools" 
                 :key="tool.title" 
@@ -30,8 +30,8 @@ Vue.component('tools-section', {
 
 Vue.component('wiki-section', {
     template: `
-    <div class="container-fluid">
-        <div class="row">
+    <div class="hn-container-fluid">
+        <div class="hn-row">
             <card 
                 v-for="wiki in wikis" 
                 :key="wiki.title" 
@@ -58,8 +58,8 @@ Vue.component('wiki-section', {
 
 Vue.component('password-crackers-section', {
     template: `
-    <div class="container-fluid">
-        <div class="row">
+    <div class="hn-container-fluid">
+        <div class="hn-row">
             <card 
                 v-for="cracker in crackers" 
                 :key="cracker.title" 
@@ -89,8 +89,8 @@ Vue.component('password-crackers-section', {
 
 Vue.component('misc-section', {
     template: `
-    <div class="container-fluid">
-        <div class="row">
+    <div class="hn-container-fluid">
+        <div class="hn-row">
             <card 
                 v-for="misc in miscs" 
                 :key="misc.title" 
@@ -114,6 +114,40 @@ Vue.component('misc-section', {
     }
 });
 
+Vue.component('link-utili', {
+    template: `
+    <div class="hn-container-fluid">
+        <div class="hn-row">
+            <ul class="hn-list-group hn-list-group-flush">
+                <linksutili
+                    v-for="link in links"
+                    :key="link.title"
+                    :title="link.title"
+                    :link="link.link">
+                </linksutili>
+            </ul>
+        </div>
+    </div>
+    `,
+    data() {
+        return {
+            links: [
+                { title: 'Hack The Box', link: 'https://www.hackthebox.eu/' },
+                { title: 'Try Hack Me', link: 'https://tryhackme.com/' },
+                { title: 'VulnHub', link: 'https://www.vulnhub.com/' },
+                { title: 'Over The Wire', link: 'https://overthewire.org/wargames/' },
+                { title: 'PentesterLab', link: 'https://pentesterlab.com/' },
+                { title: 'Root-Me', link: 'https://www.root-me.org/' },
+                { title: 'Hacker101', link: 'https://www.hacker101.com/' },
+                { title: 'OWASP', link: 'https://owasp.org/' },
+                { title: 'SANS', link: 'https://www.sans.org/' },
+                { title: 'The Journey to Try Harder', link: 'https://www.netsecfocus.com/oscp/2021/05/06/The_Journey_to_Try_Harder-_TJnull-s_Preparation_Guide_for_PEN-200_PWK_OSCP_2.0.html#section-15-privilege-escalation' },
+            ]
+        };
+    }
+});
+
+
 Vue.component('footer-section', {
     template: `
     <footer>
@@ -127,21 +161,30 @@ Vue.component('footer-section', {
 Vue.component('card', {
     props: ['image', 'title', 'link', 'description'],
     template: `
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front">
-                <div class="img" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
-                <div class="title">
-                    <a :href="link" target="_blank" class="stretched-link">
+    <div class="hn-card">
+        <div class="hn-card-inner">
+            <div class="hn-card-front">
+                <div class="hn-img" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
+                <div class="hn-title">
+                    <a :href="link" target="_blank" class="hn-stretched-link">
                         <h3>{{ title }}</h3>
                     </a>
                 </div>
             </div>
-            <div class="card-back">
+            <div class="hn-card-back">
                 <p>{{ description }}</p>
             </div>
         </div>
     </div>
+    `
+});
+
+Vue.component('linksutili', {
+    props: ['title', 'link'],
+    template: `
+        <li class="nh-list-group nh-list-group-item">
+            <a :href="link" target="_blank" class="hn-list-group-item hn-list-group-item-action">{{ title }}</a>
+        </li>
     `
 });
 

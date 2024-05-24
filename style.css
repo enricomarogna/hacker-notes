@@ -18,7 +18,7 @@ a i {
     color: #fff;
 }
 
-.stretched-link::after {
+.hn-stretched-link::after {
     content: "";
     position: absolute;
     top: 0;
@@ -64,7 +64,7 @@ hr {
     margin: 20px 0;
 }
 
-.container-fluid {
+.hn-container-fluid {
     padding: 0 15px;
     background-color: #565555;
     padding: 20px;
@@ -72,14 +72,14 @@ hr {
     margin-bottom: 40px;
 }
 
-.row {
+.hn-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.card {
+.hn-card {
     width: 200px;
     height: 300px;
     background-color: transparent;
@@ -88,7 +88,7 @@ hr {
     perspective: 1000px;
 }
 
-.card-inner {
+.hn-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -97,11 +97,11 @@ hr {
     border-radius: 10px;
 }
 
-.card:hover .card-inner {
+.hn-card:hover .hn-card-inner {
     transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.hn-card-front, .hn-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -114,11 +114,11 @@ hr {
     box-sizing: border-box;
 }
 
-.card-front {
+.hn-card-front {
     background-color: #eaeaea;
 }
 
-.card-back {
+.hn-card-back {
     background-color: #333;
     color: #fff;
     transform: rotateY(180deg);
@@ -126,7 +126,7 @@ hr {
     text-align: center;
 }
 
-.img {
+.hn-img {
     width: 100%;
     height: 150px;
     background-size: contain;
@@ -134,12 +134,17 @@ hr {
     background-position: center;
 }
 
-.title {
+.hn-title {
     text-align: center;
     margin-top: 10px;
 }
 
-.card:hover .title a {
+.hn-card:hover .hn-title a {
+    color: #00c000;
+    transition: color 0.2s;
+}
+
+.hn-list-group-item:hover {
     color: #00c000;
     transition: color 0.2s;
 }
