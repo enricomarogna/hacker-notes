@@ -26,6 +26,7 @@ Vue.component('tools-section', {
                 { image: './assets/img/sploitus.png', title: 'Sploitus', link: 'https://sploitus.com/', description: 'Sploitus è un motore di ricerca per exploit e vulnerabilità di sicurezza.' },
                 { image: './assets/img/loldrivers.png', title: 'LolDrivers', link: 'https://www.loldrivers.io/', description: 'LolDrivers è una raccolta di driver Windows vulnerabili per scopi di ricerca e test.' },
                 { image: './assets/img/redteam-tools.png', title: 'RedTeam Tools', link: 'https://github.com/A-poc/RedTeam-Tools', description: 'Questo repository github contiene una raccolta di oltre 130 strumenti e risorse che possono essere utili per le attività di red teaming.' },
+                { image: './assets/img/lots-project.png', title: 'LOTS Project', link: 'https://lots-project.com/', description: 'Elenco di siti utilizzati per condurre attacchi di phishing, C&C, esfiltrazione e download per eludere il rilevamento.' },
                 // aggiungi altri strumenti qui...
             ]
         };
