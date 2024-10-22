@@ -18,10 +18,14 @@ Vue.component('tools-section', {
             tools: [
                 { image: './assets/img/gtfobins.webp', title: 'GTFOBins', link: 'https://gtfobins.github.io/', description: 'GTFOBins è una collezione di eseguibili Unix che possono essere sfruttati per bypassare la sicurezza.' },
                 { image: './assets/img/lolbas.webp', title: 'LOLBas', link: 'https://lolbas-project.github.io/', description: 'LOLBas è un progetto che raccoglie i binari di Windows utilizzabili per fini malevoli.' },
+                { image: './assets/img/loobins.png', title: 'LOOBins', link: 'https://www.loobins.io/', description: 'Progettato per fornire informazioni dettagliate sui file binari di macOS e su come possono essere utilizzati per scopi dannosi.' },
                 { image: './assets/img/wadcoms.webp', title: 'WADComs', link: 'https://wadcoms.github.io/', description: 'WADComs è un insieme di comandi per esplorare funzionalità sconosciute di vari software.' },
                 { image: './assets/img/reverse-shell.webp', title: 'Reverse Shell', link: 'https://www.revshells.com/', description: 'Reverse Shell fornisce vari comandi per ottenere una shell inversa su una macchina bersaglio.' },
                 { image: './assets/img/exploit-db.webp', title: 'Exploit Database', link: 'https://www.exploit-db.com/', description: 'Exploit Database è un archivio di exploit pubblici e di vulnerabilità di sicurezza.' },
                 { image: './assets/img/explain-shell.webp', title: 'Explain Shell', link: 'https://www.explainshell.com/', description: 'Explain Shell spiega ogni parte di un comando shell per comprendere meglio il suo funzionamento.' },
+                { image: './assets/img/sploitus.png', title: 'Sploitus', link: 'https://sploitus.com/', description: 'Sploitus è un motore di ricerca per exploit e vulnerabilità di sicurezza.' },
+                { image: './assets/img/loldrivers.png', title: 'LolDrivers', link: 'https://www.loldrivers.io/', description: 'LolDrivers è una raccolta di driver Windows vulnerabili per scopi di ricerca e test.' },
+                { image: './assets/img/redteam-tools.png', title: 'RedTeam Tools', link: 'https://github.com/A-poc/RedTeam-Tools', description: 'Questo repository github contiene una raccolta di oltre 130 strumenti e risorse che possono essere utili per le attività di red teaming.' },
                 // aggiungi altri strumenti qui...
             ]
         };
@@ -50,6 +54,7 @@ Vue.component('wiki-section', {
                 { image: './assets/img/exploit-notes.webp', title: 'Exploit Notes', link: 'https://exploit-notes.hdks.org/', description: 'Exploit Notes raccoglie appunti e risorse per sfruttare le vulnerabilità.' },
                 { image: './assets/img/oscp-repo.webp', title: 'OSCPRepo', link: 'https://github.com/rewardone/OSCPRepo', description: 'OSCPRepo è un repository con appunti e risorse per la certificazione OSCP.' },
                 { image: './assets/img/pentest-everything.webp', title: 'Pentest Everything', link: 'https://viperone.gitbook.io/pentest-everything/', description: 'Pentest Everything è una guida completa per il pentesting.' },
+                { image: './assets/img/thehacker-recipes.svg', title: 'The Hacker Recipes', link: 'https://www.thehacker.recipes/', description: 'The Hacker Recipes è una raccolta di ricette per hacker, con comandi e script utili.' },
                 // aggiungi altri wiki qui...
             ]
         };
