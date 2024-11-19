@@ -89,6 +89,7 @@ Vue.component('password-crackers-section', {
                 { image: './assets/img/crackstation.webp', title: 'Crack Station', link: 'https://crackstation.net/', description: 'Crack Station è un servizio di cracking di hash gratuito con un database vasto.' },
                 { image: './assets/img/passwordrecovery.webp', title: 'Password Recovery', link: 'https://passwordrecovery.io/', description: 'Password Recovery offre servizi di recupero password online.' },
                 { image: './assets/img/md5-decrypt.webp', title: 'MD5 Decrypt', link: 'https://md5decrypt.net/en/', description: 'MD5 Decrypt offre servizi di decrittazione di hash MD5 online.' },
+                { image: './assets/img/lazagne-project.jpg', title: 'LaZagne', link: 'https://github.com/AlessandroZ/LaZagne', description: 'Applicazione open source utile per recuperare le password memorizzate su un computer locale.' },
                 // aggiungi altri cracker qui...
             ]
         };
