@@ -57,6 +57,7 @@ Vue.component('wiki-section', {
                 { image: './assets/img/oscp-repo.webp', title: 'OSCPRepo', link: 'https://github.com/rewardone/OSCPRepo', description: 'OSCPRepo è un repository con appunti e risorse per la certificazione OSCP.' },
                 { image: './assets/img/pentest-everything.webp', title: 'Pentest Everything', link: 'https://viperone.gitbook.io/pentest-everything/', description: 'Pentest Everything è una guida completa per il pentesting.' },
                 { image: './assets/img/thehacker-recipes.svg', title: 'The Hacker Recipes', link: 'https://www.thehacker.recipes/', description: 'The Hacker Recipes è una raccolta di ricette per hacker, con comandi e script utili.' },
+                { image: './assets/img/hacktips.jpg', title: 'Hacktips', link: 'https://hacktips.it/', description: 'Articoli sul Penetration Test, sui Malware, sulla Privacy e in generale tutto ciò che concerne la Sicurezza Informatica.' },
                 // aggiungi altri wiki qui...
             ]
         };
