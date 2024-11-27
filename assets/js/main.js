@@ -18,10 +18,16 @@ Vue.component('tools-section', {
             tools: [
                 { image: './assets/img/gtfobins.webp', title: 'GTFOBins', link: 'https://gtfobins.github.io/', description: 'GTFOBins è una collezione di eseguibili Unix che possono essere sfruttati per bypassare la sicurezza.' },
                 { image: './assets/img/lolbas.webp', title: 'LOLBas', link: 'https://lolbas-project.github.io/', description: 'LOLBas è un progetto che raccoglie i binari di Windows utilizzabili per fini malevoli.' },
+                { image: './assets/img/loobins.png', title: 'LOOBins', link: 'https://www.loobins.io/', description: 'Progettato per fornire informazioni dettagliate sui file binari di macOS e su come possono essere utilizzati per scopi dannosi.' },
                 { image: './assets/img/wadcoms.webp', title: 'WADComs', link: 'https://wadcoms.github.io/', description: 'WADComs è un insieme di comandi per esplorare funzionalità sconosciute di vari software.' },
                 { image: './assets/img/reverse-shell.webp', title: 'Reverse Shell', link: 'https://www.revshells.com/', description: 'Reverse Shell fornisce vari comandi per ottenere una shell inversa su una macchina bersaglio.' },
                 { image: './assets/img/exploit-db.webp', title: 'Exploit Database', link: 'https://www.exploit-db.com/', description: 'Exploit Database è un archivio di exploit pubblici e di vulnerabilità di sicurezza.' },
                 { image: './assets/img/explain-shell.webp', title: 'Explain Shell', link: 'https://www.explainshell.com/', description: 'Explain Shell spiega ogni parte di un comando shell per comprendere meglio il suo funzionamento.' },
+                { image: './assets/img/sploitus.png', title: 'Sploitus', link: 'https://sploitus.com/', description: 'Sploitus è un motore di ricerca per exploit e vulnerabilità di sicurezza.' },
+                { image: './assets/img/loldrivers.png', title: 'LolDrivers', link: 'https://www.loldrivers.io/', description: 'LolDrivers è una raccolta di driver Windows vulnerabili per scopi di ricerca e test.' },
+                { image: './assets/img/redteam-tools.png', title: 'RedTeam Tools', link: 'https://github.com/A-poc/RedTeam-Tools', description: 'Questo repository github contiene una raccolta di oltre 130 strumenti e risorse che possono essere utili per le attività di red teaming.' },
+                { image: './assets/img/lots-project.png', title: 'LOTS Project', link: 'https://lots-project.com/', description: 'Elenco di siti utilizzati per condurre attacchi di phishing, C&C, esfiltrazione e download per eludere il rilevamento.' },
+                { image: './assets/img/cyberchef.png', title: 'CyberChef', link: 'https://gchq.github.io/CyberChef/', description: 'CyberChef è uno strumento per la decodifica, l\'analisi e la generazione di dati.' },
                 // aggiungi altri strumenti qui...
             ]
         };
@@ -50,6 +56,8 @@ Vue.component('wiki-section', {
                 { image: './assets/img/exploit-notes.webp', title: 'Exploit Notes', link: 'https://exploit-notes.hdks.org/', description: 'Exploit Notes raccoglie appunti e risorse per sfruttare le vulnerabilità.' },
                 { image: './assets/img/oscp-repo.webp', title: 'OSCPRepo', link: 'https://github.com/rewardone/OSCPRepo', description: 'OSCPRepo è un repository con appunti e risorse per la certificazione OSCP.' },
                 { image: './assets/img/pentest-everything.webp', title: 'Pentest Everything', link: 'https://viperone.gitbook.io/pentest-everything/', description: 'Pentest Everything è una guida completa per il pentesting.' },
+                { image: './assets/img/thehacker-recipes.svg', title: 'The Hacker Recipes', link: 'https://www.thehacker.recipes/', description: 'The Hacker Recipes è una raccolta di ricette per hacker, con comandi e script utili.' },
+                { image: './assets/img/hacktips.jpg', title: 'Hacktips', link: 'https://hacktips.it/', description: 'Articoli sul Penetration Test, sui Malware, sulla Privacy e in generale tutto ciò che concerne la Sicurezza Informatica.' },
                 // aggiungi altri wiki qui...
             ]
         };
@@ -81,6 +89,7 @@ Vue.component('password-crackers-section', {
                 { image: './assets/img/crackstation.webp', title: 'Crack Station', link: 'https://crackstation.net/', description: 'Crack Station è un servizio di cracking di hash gratuito con un database vasto.' },
                 { image: './assets/img/passwordrecovery.webp', title: 'Password Recovery', link: 'https://passwordrecovery.io/', description: 'Password Recovery offre servizi di recupero password online.' },
                 { image: './assets/img/md5-decrypt.webp', title: 'MD5 Decrypt', link: 'https://md5decrypt.net/en/', description: 'MD5 Decrypt offre servizi di decrittazione di hash MD5 online.' },
+                { image: './assets/img/lazagne-project.jpg', title: 'LaZagne', link: 'https://github.com/AlessandroZ/LaZagne', description: 'Applicazione open source utile per recuperare le password memorizzate su un computer locale.' },
                 // aggiungi altri cracker qui...
             ]
         };
@@ -108,6 +117,7 @@ Vue.component('misc-section', {
                 { image: './assets/img/exploit-notes-hdks.webp', title: 'Security Links', link: 'https://security-links.hdks.org/', description: 'Security Links è una raccolta di collegamenti utili per la sicurezza informatica.' },
                 { image: './assets/img/open-security-training.webp', title: 'Open Security Training', link: 'https://opensecuritytraining.info/', description: 'Open Security Training è un sito che offre corsi di sicurezza informatica gratuiti e open source.' },
                 { image: './assets/img/offsec.webp', title: 'Offsec', link: 'https://portal.offsec.com/', description: 'OffSec (Offensive Security) è una risorsa di riferimento per la formazione e la certificazione in sicurezza informatica.' },
+                { image: './assets/img/cheat-sheet.png', title: 'Cheat Sheets', link: 'https://www.cheat-sheets.org/', description: 'Tutti i cheat sheets, i riassunti e le schede di consultazione rapida in un\'unica pagina.' },
                 // aggiungi altri misc qui...
             ]
         };
