@@ -29,6 +29,7 @@ Vue.component('tools-section', {
                 { image: './assets/img/lots-project.png', title: 'LOTS Project', link: 'https://lots-project.com/', description: 'Elenco di siti utilizzati per condurre attacchi di phishing, C&C, esfiltrazione e download per eludere il rilevamento.' },
                 { image: './assets/img/cyberchef.png', title: 'CyberChef', link: 'https://gchq.github.io/CyberChef/', description: 'CyberChef è uno strumento per la decodifica, l\'analisi e la generazione di dati.' },
                 { image: './assets/img/ghost-pack.jpg', title: 'GhostPack', link: 'https://github.com/r3motecontrol/Ghostpack-CompiledBinaries', description: 'Lista di binari compilati di GhostPack, un insieme di strumenti per la sicurezza di Windows.' },
+                { image: './assets/img/payloadsallthethings.png', title: 'Payloads All The Things', link: 'https://github.com/swisskyrepo/PayloadsAllTheThings', description: 'Un elenco di payload e bypass utili per la sicurezza delle applicazioni Web.' },
                 // aggiungi altri strumenti qui...
             ]
         };
