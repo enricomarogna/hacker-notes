@@ -9,6 +9,47 @@ body {
     background-color: #333;
     margin: 0;
     padding: 20px;
+
+    nav {
+        padding: 10px 0;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+    
+            li {
+                list-style: none;
+                font-size: 20px;
+                cursor: pointer;
+                display: block ruby;
+
+                   
+                &::after{
+                    content: "-";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    margin-left: 10px;
+                    color: #fff;
+                }
+
+                &:last-child::after{
+                    content: "";
+                }
+
+                a {
+                    color: $primary !important;
+
+                    &:hover {
+                        color: $text !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 a {

@@ -119,24 +119,51 @@ Vue.component('misc-section', {
                 { image: './assets/img/exploit-notes-hdks.webp', title: 'Security Links', link: 'https://security-links.hdks.org/', description: 'Security Links è una raccolta di collegamenti utili per la sicurezza informatica.' },
                 { image: './assets/img/open-security-training.webp', title: 'Open Security Training', link: 'https://opensecuritytraining.info/', description: 'Open Security Training è un sito che offre corsi di sicurezza informatica gratuiti e open source.' },
                 { image: './assets/img/offsec.webp', title: 'Offsec', link: 'https://portal.offsec.com/', description: 'OffSec (Offensive Security) è una risorsa di riferimento per la formazione e la certificazione in sicurezza informatica.' },
-                { image: './assets/img/cheat-sheet.png', title: 'Cheat Sheets', link: 'https://www.cheat-sheets.org/', description: 'Tutti i cheat sheets, i riassunti e le schede di consultazione rapida in un\'unica pagina.' },
+                // { image: './assets/img/cheat-sheet.png', title: 'Cheat Sheets', link: 'https://www.cheat-sheets.org/', description: 'Tutti i cheat sheets, i riassunti e le schede di consultazione rapida in un\'unica pagina.' },
                 // aggiungi altri misc qui...
             ]
         };
     }
 });
 
-Vue.component('link-utili', {
+Vue.component('cheet-sheet-section', {
     template: `
     <div class="hn-container-fluid">
         <div class="hn-row">
             <ul class="hn-list-group hn-list-group-flush">
-                <linksutili
+                <cheetsheet-section
+                    v-for="cheetsheet in cheetsheets"
+                    :key="cheetsheet.title"
+                    :title="cheetsheet.title"
+                    :link="cheetsheet.link">
+                </cheetsheet-section>
+            </ul>
+        </div>
+    </div>
+    `,
+    data() {
+        return {
+            cheetsheets: [
+                { title: 'AwesomePentest CheatSheets', link: 'https://github.com/ByteSnipers/awesome-pentest-cheat-sheets' },
+                { title: 'Windows Post Exploitation', link: 'https://github.com/emilyanncr/Windows-Post-Exploitation' },
+                { title: 'HarmJ0y CheatSheets', link: 'https://github.com/HarmJ0y/CheatSheets' },
+                { title: 'CheatSheets.org', link: 'https://www.cheat-sheets.org/' },
+            ]
+        };
+    }
+});
+
+Vue.component('link-utili-section', {
+    template: `
+    <div class="hn-container-fluid">
+        <div class="hn-row">
+            <ul class="hn-list-group hn-list-group-flush">
+                <linksutili-section
                     v-for="link in links"
                     :key="link.title"
                     :title="link.title"
                     :link="link.link">
-                </linksutili>
+                </linksutili-section>
             </ul>
         </div>
     </div>
@@ -158,7 +185,6 @@ Vue.component('link-utili', {
         };
     }
 });
-
 
 Vue.component('footer-section', {
     template: `
@@ -191,7 +217,16 @@ Vue.component('card', {
     `
 });
 
-Vue.component('linksutili', {
+Vue.component('cheetsheet-section', {
+    props: ['title', 'link'],
+    template: `
+        <li class="nh-list-group nh-list-group-item">
+            <a :href="link" target="_blank" class="hn-list-group-item hn-list-group-item-action">{{ title }}</a>
+        </li>
+    `
+});
+
+Vue.component('linksutili-section', {
     props: ['title', 'link'],
     template: `
         <li class="nh-list-group nh-list-group-item">
