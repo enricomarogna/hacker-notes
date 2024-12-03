@@ -121,7 +121,7 @@ Vue.component('misc-section', {
                 { image: './assets/img/exploit-notes-hdks.webp', title: 'Security Links', link: 'https://security-links.hdks.org/', description: 'Security Links è una raccolta di collegamenti utili per la sicurezza informatica.' },
                 { image: './assets/img/open-security-training.webp', title: 'Open Security Training', link: 'https://opensecuritytraining.info/', description: 'Open Security Training è un sito che offre corsi di sicurezza informatica gratuiti e open source.' },
                 { image: './assets/img/offsec.webp', title: 'Offsec', link: 'https://portal.offsec.com/', description: 'OffSec (Offensive Security) è una risorsa di riferimento per la formazione e la certificazione in sicurezza informatica.' },
-                { image: './assets/img/seclist.png', title: 'SecLists', link: 'https://github.com/danielmiessler/SecLists/', description: 'Raccolta di liste. Includono nomi utente, password, URL, modelli di dati sensibili, payload fuzz, shell web e molto altro.' },
+                { image: './assets/img/SecLists.png', title: 'SecLists', link: 'https://github.com/danielmiessler/SecLists/', description: 'Raccolta di liste. Includono nomi utente, password, URL, modelli di dati sensibili, payload fuzz, shell web e molto altro.' },
                 // { image: './assets/img/cheat-sheet.png', title: 'Cheat Sheets', link: 'https://www.cheat-sheets.org/', description: 'Tutti i cheat sheets, i riassunti e le schede di consultazione rapida in un\'unica pagina.' },
                 // aggiungi altri misc qui...
             ]
