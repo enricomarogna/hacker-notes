@@ -186,6 +186,8 @@ Vue.component('link-utili-section', {
                 { title: 'The Journey to Try Harder', link: 'https://www.netsecfocus.com/oscp/2021/05/06/The_Journey_to_Try_Harder-_TJnull-s_Preparation_Guide_for_PEN-200_PWK_OSCP_2.0.html#section-15-privilege-escalation' },
                 { title: 'Toolies', link: 'https://github.com/expl0itabl3/Toolies' },
                 { title: 'OSCP CheetSheet', link: 'https://github.com/Sp4c3Tr4v3l3r/OSCP/tree/main' },
+                { title: 'Offsec Certification Resources', link: 'https://github.com/V-i-x-x/Offsec-Certification-Resources/blob/main/OSCP%20Resources%20(2024).md' },
+                { title: 'Windows - Privilege Escalation', link: 'https://swisskyrepo.github.io/InternalAllTheThings/redteam/escalation/windows-privilege-escalation/#summary' },
             ]
         };
     }
