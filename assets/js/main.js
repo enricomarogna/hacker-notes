@@ -188,6 +188,7 @@ Vue.component('link-utili-section', {
                 { title: 'OSCP CheetSheet', link: 'https://github.com/Sp4c3Tr4v3l3r/OSCP/tree/main' },
                 { title: 'Offsec Certification Resources', link: 'https://github.com/V-i-x-x/Offsec-Certification-Resources/blob/main/OSCP%20Resources%20(2024).md' },
                 { title: 'Windows - Privilege Escalation', link: 'https://swisskyrepo.github.io/InternalAllTheThings/redteam/escalation/windows-privilege-escalation/#summary' },
+                { title: 'Static Binaries ', link: 'https://github.com/andrew-d/static-binaries/tree/master' },
             ]
         };
     }
